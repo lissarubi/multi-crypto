@@ -1,6 +1,6 @@
 {
   "name": "multi-crypto",
-  "version": "1.5",
+  "version": "1.2.9",
   "description": "A Module to encode and decode texts",
   "main": "index.js",
   "scripts": {
