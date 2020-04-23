@@ -3,7 +3,8 @@
 Multi Crypto is a node lib to cryptography text, encode and decode, **but, how i can use it?**
 
 ```node
-npm install multi-crypto```
+npm install multi-crypto
+```
 
 and
 
