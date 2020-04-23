@@ -1,4 +1,4 @@
-exports.encodeMorse = (text) => {
+exports.encryptMorse = (text) => {
     var alphabet = {
         'a': '.-',    'b': '-...',  'c': '-.-.', 'd': '-..',
         'e': '.',     'f': '..-.',  'g': '--.',  'h': '....',
@@ -22,7 +22,7 @@ exports.encodeMorse = (text) => {
     return morse
 }
 
-exports.decodeMorse = (morse) => {
+exports.decryptMorse = (morse) => {
     var alphabet = {  
     "-----":"0",
     ".----":"1",
