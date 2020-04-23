@@ -21,7 +21,17 @@ const MyBinary = multiCrypto.decodeBinary(
 # Ciphers List
 
 ## Binary
-```multiCrypto.encodeBinary(text); multiCrypto.decodeBinary(binary)```
+```
+multiCrypto.encodeBinary(text)
+multiCrypto.decodeBinary(binary)
+```
 
 ## Morse
-```multiCrypto.encodeMorse(text); multiCrypto.decodeMorse(morse)```
+```
+multiCrypto.encodeMorse(text)
+multiCrypto.decodeMorse(morse)
+```
+
+---
+
+Created with love by Ederson Ferreira (Brazil) &#x1F49A
