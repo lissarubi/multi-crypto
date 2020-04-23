@@ -1,6 +1,7 @@
 # Multi Crypto
 
-Multi Crypto is a node lib to cryptography text, encode and decode, **but, how i can use it?**
+Multi Crypto is a node lib to cryptography text, encrypt and Decrypt, **but, how i can use it?**
+Simple:
 
 ```node
 npm install multi-crypto
@@ -12,11 +13,15 @@ and
 const multiCrypto = require('multi-crypto')
 
 //for example, enconding a text to binary
-const MyText = multiCrypto.encodeBinary('This is my text')
+const MyText = multiCrypto.encryptBinary('This is my text')
 
-//and decode binary
-const MyBinary = multiCrypto.decodeBinary(
-1010100 1101000 1101001 1110011 100000 1101001 1110011 100000 1101101 1111001 100000 1110100 1100101 1111000 1110100
+//and Decrypt binary
+const MyBinary = multiCrypto.DecryptBinary(
+1010100 1101000 1101001 
+1110011 100000 1101001 
+1110011 100000 1101101 
+1111001 100000 1110100 
+1100101 1111000 1110100
 )
 
 ```
@@ -26,17 +31,39 @@ const MyBinary = multiCrypto.decodeBinary(
 ## Binary
 
 ```node
-multiCrypto.encodeBinary(text)
-multiCrypto.decodeBinary(binary)
+multiCrypto.encryptBinary(text)
+multiCrypto.DecryptBinary(binary)
 ```
 
 ## Morse
 
 ```node
-multiCrypto.encodeMorse(text)
-multiCrypto.decodeMorse(morse)
+multiCrypto.encryptMorse(text)
+multiCrypto.DecryptMorse(morse)
+```
+
+## ceaser Cipher
+
+```node
+multiCrypto.encryptCeaser(text)
+multiCrypto.bruteDecryptCeaser(text) // for show all possibilities
+```
+
+## atBash
+```node
+multiCrypto.encryptAtBash(text)
+multiCrypto.decryptAtBash(text)
+```
+
+## Affine Cipher
+```node
+multiCrypto.encryptAffine(text, a, b) // a and b are numbers, like a = 5 and b = 7
+
+multiCrypto.decryptAffine(text, a, v) // a and b are numbers, like a = 5 and b = 7
 ```
 
 ---
+NPM Page: https://www.npmjs.com/package/multi-crypto
+GitHub: https://github.com/edersonferreira/multi-crypto
 
 Created with love by Ederson Ferreira (Brazil) :green_heart:

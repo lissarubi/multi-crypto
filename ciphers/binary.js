@@ -1,4 +1,4 @@
-exports.encodeBinary = (text) => {
+exports.encryptBinary = (text) => {
     let binaryText = ''
 
     for (var i = 0; i < text.length; i++) {
@@ -8,7 +8,7 @@ exports.encodeBinary = (text) => {
     return binaryText
 }
 
-exports.decodeBinary = (binary) => {
+exports.decryptBinary = (binary) => {
     const text = binary
     .split(' ')
     .map(b => parseInt(b, 2))
