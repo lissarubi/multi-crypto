@@ -1,5 +1,5 @@
-binary = require('./binary')
-morse = require('./morse')
+binary = require('./ciphers/binary')
+morse = require('./ciphers/morse')
 
 exports.encodeBinary = (text) => {
     console.log(binary.encodeBinary(text))
