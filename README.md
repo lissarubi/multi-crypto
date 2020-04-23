@@ -64,6 +64,7 @@ multiCrypto.decryptAffine(text, a, v) // a and b are numbers, like a = 5 and b =
 
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
+
 GitHub: https://github.com/edersonferreira/multi-crypto
 
 Created with love by Ederson Ferreira (Brazil) :green_heart:
