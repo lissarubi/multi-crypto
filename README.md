@@ -18,6 +18,10 @@ const MyBinary = multiCrypto.decodeBinary(
 )
 ```
 
-## Ciphers List
-Binary ```multiCrypto.encodeBinary(text); multiCrypto.decodeBinary(binary)```
-Morse ```multiCrypto.encodeMorse(text); multiCrypto.decodeMorse(morse)```
+# Ciphers List
+
+## Binary
+```multiCrypto.encodeBinary(text); multiCrypto.decodeBinary(binary)```
+
+## Morse
+```multiCrypto.encodeMorse(text); multiCrypto.decodeMorse(morse)```
