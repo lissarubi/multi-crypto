@@ -1,6 +1,6 @@
 # Multi Crypto
 
-Multi Crypto is a node lib to cryptography text, encrypt and Decrypt, **but, how i can use it?**
+Multi Crypto is a node lib to cryptography text, encrypt and decrypt, **but, how i can use it?**
 Simple:
 
 ```node
@@ -32,6 +32,7 @@ const MyBinary = multiCrypto.DecryptBinary(
 
 ```node
 multiCrypto.encryptBinary(text)
+
 multiCrypto.DecryptBinary(binary)
 ```
 
@@ -39,6 +40,7 @@ multiCrypto.DecryptBinary(binary)
 
 ```node
 multiCrypto.encryptMorse(text)
+
 multiCrypto.DecryptMorse(morse)
 ```
 
@@ -46,12 +48,14 @@ multiCrypto.DecryptMorse(morse)
 
 ```node
 multiCrypto.encryptCeaser(text)
+
 multiCrypto.bruteDecryptCeaser(text) // for show all possibilities
 ```
 
 ## atBash
 ```node
 multiCrypto.encryptAtBash(text)
+
 multiCrypto.decryptAtBash(text)
 ```
 
@@ -60,6 +64,20 @@ multiCrypto.decryptAtBash(text)
 multiCrypto.encryptAffine(text, a, b) // a and b are numbers, like a = 5 and b = 7
 
 multiCrypto.decryptAffine(text, a, v) // a and b are numbers, like a = 5 and b = 7
+```
+
+## Auto Key
+```node
+multiCrypto.encryptAutoKey(text, key) // key must be a string
+
+multiCrypto.decryptAutoKet(text, key) // key must be a string
+```
+
+## Baconian Cipher
+```node
+multiCrypto.encryptBaconian(text, alphabet) // the default alphabet is ABCDEFGHIKLMNOPQRSTUWXYZ
+
+multiCrypto.decryptBaconian(text, alphabet) // the default alphabet is ABCDEFGHIKLMNOPQRSTUWXYZ
 ```
 
 ---
