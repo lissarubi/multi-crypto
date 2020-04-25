@@ -39,7 +39,7 @@ multiCrypto.DecryptBinary(binary)
 ## Morse
 
 ```node
-multiCrypto.encryptMorse(text)
+multiCrypto.encryptMorse(text, shift)
 
 multiCrypto.DecryptMorse(morse)
 ```
