@@ -63,7 +63,7 @@ multiCrypto.decryptAtBash(text)
 ```node
 multiCrypto.encryptAffine(text, a, b) // a and b are numbers, like a = 5 and b = 7
 
-multiCrypto.decryptAffine(text, a, v) // a and b are numbers, like a = 5 and b = 7
+multiCrypto.decryptAffine(text, a, b) // a and b are numbers, like a = 5 and b = 7
 ```
 
 ## Auto Key
