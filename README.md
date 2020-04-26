@@ -80,6 +80,18 @@ multiCrypto.encryptBaconian(text, alphabet) // the default alphabet is ABCDEFGHI
 multiCrypto.decryptBaconian(text, alphabet) // the default alphabet is ABCDEFGHIKLMNOPQRSTUWXYZ
 ```
 
+## Base 64
+```node
+multiCrypto.encryptBase64(text)
+multiCrypto.decryptBase64(base64Text)
+```
+
+## Viginere Cipher
+```node
+multiCrypto.encryptViginere(text, key) // key is like "abc"
+multiCrypto.decryptViginere(text, key) // key is like "abc"
+```
+
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
 

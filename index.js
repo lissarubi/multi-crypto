@@ -5,6 +5,8 @@ atBash = require('./ciphers/atbash')
 affine = require('./ciphers/affine')
 autokey = require('./ciphers/autokey')
 baconian = require('./ciphers/baconian')
+base64 = require('./ciphers/base64')
+viginere = require('./ciphers/viginere')
 
 exports.encryptBinary = (text) => {
     return binary.encryptBinary(text)
@@ -50,4 +52,16 @@ exports.encryptBaconian = (text, alphabet) => {
 }
 exports.decryptBaconian = (text, alphabet) => {
     return baconian.decryptBaconian(text, alphabet)
+}
+exports.encryptBase64 = (text) => {
+    return base64.encryptBase64(text)
+}
+exports.decryptBase64 = (base64Text) => {
+    return base64.decryptBase64(base64Text)
+}
+exports.encryptViginere = (text, key) => {
+    return viginere.encryptViginere(text, key)
+}
+exports.decryptViginere = (viginereText, key) => {
+    return viginere.decryptViginere(viginereText, key)
 }
