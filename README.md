@@ -92,6 +92,20 @@ multiCrypto.encryptViginere(text, key) // key is like "abc"
 multiCrypto.decryptViginere(text, key) // key is like "abc"
 ```
 
+## Rail Fance
+```node
+multiCrypto.encryptRailFence(text, key) // key is a number, like 3
+multiCrypto.decryptRailFence(text, key) // key is a number, like 3
+```
+
+## Simple Substitution
+```node
+multiCrypto.encryptSimpleSubstitution(text, alphabet)
+multiCrypto.decryptSimpleSubstitution(text, alphabet)
+
+// alphabet is like "dynoutmperlqbcwzvsagjfxikh"
+```
+
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
 
