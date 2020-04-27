@@ -106,6 +106,18 @@ multiCrypto.decryptSimpleSubstitution(text, alphabet)
 // alphabet is like "dynoutmperlqbcwzvsagjfxikh"
 ```
 
+## Columnar Transposition
+```node
+multiCrypto.encryptColumnarTransposition(text, key, padChar='x') // padChar is a letter, like "x"
+multiCrypto.decryptColumnarTransposition(text, key) // you dont have to put padChar
+```
+
+## Porta Cipher
+```node
+multiCrypto.encryptPorta(text, key) // key is a word
+multiCrypto.decryptPorta(text, key) // key is a word
+```
+
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
 
