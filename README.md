@@ -140,6 +140,16 @@ multiCrypto.decryptFourSquare(text, key1, key2)
 // the keys should be alphabets, like "zgptfoihmuwdrcnykeqaxvsbl" and "mfnbdcrhsaxyogvituewlqzkp"
 ```
 
+## Play Fair
+```node
+multiCrypto.encryptPlayfair(text, keysquare)
+
+multiCrypto.decryptPlayfair(text, keysquare)
+
+// keysquare must be a alphabet, like:
+"monarchybdefgiklpqstuvwxz"
+```
+
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
 
