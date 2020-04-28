@@ -150,7 +150,17 @@ exports.encryptFourSquare = (text, key1, key2) => {
   return fourSquare.encryptFourSquare(text, key1, key2);
 };
 
-exports.decryptFourSquare = (text, key1, key2) => {
+exports.decryptFourSquare = (Ntext, key1, key2) => {
   const fourSquare = require('./ciphers/fourSquare');
   return fourSquare.decryptFourSquare(text, key1, key2);
+};
+
+exports.encryptPlayfair = (text, keysquare) => {
+  const playfair = require('./ciphers/playfair');
+  return playfair.encryptPlayfair(text, keysquare);
+};
+
+exports.decryptPlayfair = (text, keysquare) => {
+  const playfair = require('./ciphers/playfair');
+  return playfair.decryptPlayfair(text, keysquare);
 };
