@@ -150,6 +150,26 @@ multiCrypto.decryptPlayfair(text, keysquare)
 "monarchybdefgiklpqstuvwxz"
 ```
 
+# ADFGVX Cipher
+```node
+multiCrypto.encryptAdfgvx(text, keysquare, keyword)
+
+multiCrypto.decryptAdfgvx(text, keysquare, keyword)
+
+// keysquare should have all letters and numbers (0 - 9)
+// keyword is any word, like "BRAZIL"
+```
+
+# ADFGX Cipher
+```node
+multiCrypto.encryptAdfgx(text, keysquare, keyword)
+
+multiCrypto.decryptAdfgx(text, keysquare, keyword)
+
+// keysquare should have all letters execept "j"
+// the key word is any word, like "BRAZIL"
+```
+
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
 

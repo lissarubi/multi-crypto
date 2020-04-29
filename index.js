@@ -164,3 +164,23 @@ exports.decryptPlayfair = (text, keysquare) => {
   const playfair = require('./ciphers/playfair');
   return playfair.decryptPlayfair(text, keysquare);
 };
+
+exports.encryptAdfgvx = (text, keysquare, keyword) => {
+  const adfgvx = require('./ciphers/adfgvx');
+  return adfgvx.encryptAdfgvx(text, keysquare, keyword);
+};
+
+exports.decryptAdfgvx = (adfgvxText, keysquare, keyword) => {
+  const adfgvx = require('./ciphers/adfgvx');
+  return adfgvx.decryptAdfgvx(adfgvxText, keysquare, keyword);
+};
+
+exports.encryptAdfgx = (text, keysquare, keyword) => {
+  const adfgx = require('./ciphers/adfgx');
+  return adfgx.encryptAdfgx(text, keysquare, keyword);
+};
+
+exports.decryptAdfgx = (adfgxText, keysquare, keyword) => {
+  const adfgx = require('./ciphers/adfgx');
+  return adfgx.decryptAdfgx(adfgxText, keysquare, keyword);
+};
