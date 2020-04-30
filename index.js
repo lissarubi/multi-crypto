@@ -184,3 +184,13 @@ exports.decryptAdfgx = (adfgxText, keysquare, keyword) => {
   const adfgx = require('./ciphers/adfgx');
   return adfgx.decryptAdfgx(adfgxText, keysquare, keyword);
 };
+
+exports.encryptBifid = (text, keysquare, period) => {
+  const bifid = require('./ciphers/bifid')
+  return bifid.encryptBifid(text, keysquare, period)
+}
+
+exports.decryptBifid = (bifidText, keysquare, period) => {
+  const bifid = require('./ciphers/bifid')
+  return bifid.decryptBifid(bifidText, keysquare, period)
+}

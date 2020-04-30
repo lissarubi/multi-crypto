@@ -170,6 +170,19 @@ multiCrypto.decryptAdfgx(text, keysquare, keyword)
 // the key word is any word, like "BRAZIL"
 ```
 
+## Bifid Cipher
+```node
+multiCrypto.encryptBifid(text, keysquare, peorid)
+
+multiCrypto.encryptBifid(text, keysquare, peorid)
+
+// keysquare should be all letters exepect "j", it is merged with a letter i
+
+// peorid should be a number, like 5
+```
+
+
+
 ---
 NPM Page: https://www.npmjs.com/package/multi-crypto
 
