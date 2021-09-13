@@ -26,9 +26,9 @@ const MyBinary = multiCrypto.DecryptBinary(
 
 ```
 
-# Ciphers List
+## Ciphers List
 
-## Binary
+### Binary
 
 ```node
 multiCrypto.encryptBinary(text)
@@ -36,7 +36,7 @@ multiCrypto.encryptBinary(text)
 multiCrypto.DecryptBinary(binary)
 ```
 
-## Morse
+### Morse
 
 ```node
 multiCrypto.encryptMorse(text)
@@ -44,7 +44,7 @@ multiCrypto.encryptMorse(text)
 multiCrypto.DecryptMorse(morse)
 ```
 
-## ceaser Cipher
+### ceaser Cipher
 
 ```node
 multiCrypto.encryptCeaser(text)
@@ -52,56 +52,64 @@ multiCrypto.encryptCeaser(text)
 multiCrypto.bruteDecryptCeaser(text) // for show all possibilities
 ```
 
-## atBash
+### atBash
+
 ```node
 multiCrypto.encryptAtBash(text)
 
 multiCrypto.decryptAtBash(text)
 ```
 
-## Affine Cipher
+### Affine Cipher
+
 ```node
 multiCrypto.encryptAffine(text, a, b) // a and b are numbers, like a = 5 and b = 7
 
 multiCrypto.decryptAffine(text, a, b) // a and b are numbers, like a = 5 and b = 7
 ```
 
-## Auto Key
+### Auto Key
+
 ```node
 multiCrypto.encryptAutoKey(text, key) // key must be a string
 
 multiCrypto.decryptAutoKet(text, key) // key must be a string
 ```
 
-## Baconian Cipher
+### Baconian Cipher
+
 ```node
 multiCrypto.encryptBaconian(text, alphabet) // the default alphabet is ABCDEFGHIKLMNOPQRSTUWXYZ
 
 multiCrypto.decryptBaconian(text, alphabet) // the default alphabet is ABCDEFGHIKLMNOPQRSTUWXYZ
 ```
 
-## Base 64
+### Base 64
+
 ```node
 multiCrypto.encryptBase64(text)
 
 multiCrypto.decryptBase64(base64Text)
 ```
 
-## Viginere Cipher
+### Viginere Cipher
+
 ```node
 multiCrypto.encryptViginere(text, key) // key is like "abc"
 
 multiCrypto.decryptViginere(text, key) // key is like "abc"
 ```
 
-## Rail Fance
+### Rail Fance
+
 ```node
 multiCrypto.encryptRailFence(text, key) // key is a number, like 3
 
 multiCrypto.decryptRailFence(text, key) // key is a number, like 3
 ```
 
-## Simple Substitution
+### Simple Substitution
+
 ```node
 multiCrypto.encryptSimpleSubstitution(text, alphabet)
 
@@ -110,28 +118,32 @@ multiCrypto.decryptSimpleSubstitution(text, alphabet)
 // alphabet is like "dynoutmperlqbcwzvsagjfxikh"
 ```
 
-## Columnar Transposition
+### Columnar Transposition
+
 ```node
 multiCrypto.encryptColumnarTransposition(text, key, padChar='x') // padChar is a letter, like "x"
 
 multiCrypto.decryptColumnarTransposition(text, key) // you dont have to put padChar
 ```
 
-## Porta Cipher
+### Porta Cipher
+
 ```node
 multiCrypto.encryptPorta(text, key) // key is a word
 
 multiCrypto.decryptPorta(text, key) // key is a word
 ```
 
-## Hill Cipher
+### Hill Cipher
+
 ```node
 multiCrypto.encryptHill(text, key) // key should be 4 numbers, like "5 17 4 15" in a string
 
 multiCrypto.decryptHill(text, key) // key should be 4 numbers, like "5 17 4 15" in a string
 ```
 
-## Four Square
+### Four Square
+
 ```node
 multiCrypto.encryptFourSquare(text, key1, key2)
 
@@ -140,7 +152,8 @@ multiCrypto.decryptFourSquare(text, key1, key2)
 // the keys should be alphabets, like "zgptfoihmuwdrcnykeqaxvsbl" and "mfnbdcrhsaxyogvituewlqzkp"
 ```
 
-## Play Fair
+### Play Fair
+
 ```node
 multiCrypto.encryptPlayfair(text, keysquare)
 
@@ -150,7 +163,8 @@ multiCrypto.decryptPlayfair(text, keysquare)
 "monarchybdefgiklpqstuvwxz"
 ```
 
-# ADFGVX Cipher
+### ADFGVX Cipher
+
 ```node
 multiCrypto.encryptAdfgvx(text, keysquare, keyword)
 
@@ -160,7 +174,8 @@ multiCrypto.decryptAdfgvx(text, keysquare, keyword)
 // keyword is any word, like "BRAZIL"
 ```
 
-# ADFGX Cipher
+### ADFGX Cipher
+
 ```node
 multiCrypto.encryptAdfgx(text, keysquare, keyword)
 
@@ -170,7 +185,8 @@ multiCrypto.decryptAdfgx(text, keysquare, keyword)
 // the key word is any word, like "BRAZIL"
 ```
 
-## Bifid Cipher
+### Bifid Cipher
+
 ```node
 multiCrypto.encryptBifid(text, keysquare, peorid)
 
